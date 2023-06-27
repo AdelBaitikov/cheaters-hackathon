@@ -7,4 +7,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Models\TaskModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Models\TaskModel.cs" />
+  </ItemGroup>
+
 </Project>
