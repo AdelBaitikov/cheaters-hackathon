@@ -1,6 +1,3 @@
 ﻿using Microsoft.Data.SqlClient;
-string connectionString = "Data Source=.;Initial Catalog=TaskModels;Trusted_Connection=true; encrypt option";
+string connectionString = "Server=.;Database=TaskManagerDb; Trusted_Connection=True; encrypt=optional";
 
-using (SqlConnection connection = new SqlConnection(connectionString)) ;
-
-    

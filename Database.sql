@@ -6,10 +6,10 @@ USE TaskManagerDb
 
 CREATE TABLE TaskModels
 (
-	Id INTEGER,
-	Title NVARCHAR(150),
-	[Description] NVARCHAR(500),
-	[DateTime] DateTime,
-	[Priority] TINYINT,
-	[Status] TINYINT,
+	Id BIGINT IDENTITY,
+	Title NVARCHAR(150) NOT NULL,
+	[Description] NVARCHAR(500) NULL,
+	[DateTime] DATETIME2 NOT NULL,
+	[Priority] TINYINT NOT NULL,
+	[Status] TINYINT NOT NULL
 )
