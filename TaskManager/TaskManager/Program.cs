@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using TaskManager.Services;
+using TaskManager.UI;
+
+var database = new DatabaseManager();
+var app = new AppUI(database);
+app.Start();
